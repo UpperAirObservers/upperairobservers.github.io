@@ -32,3 +32,7 @@ The Persian version intentionally keeps the font stack from the first site versi
 `Tahoma, "Segoe UI", Arial, sans-serif`
 
 No external font download is required.
+
+
+## Persian font
+The Persian interface uses **Vazirmatn** loaded from Google Fonts. When the font cannot be downloaded (for example while offline), the browser falls back to Tahoma, Segoe UI, then Arial. No font files are included in the repository.
