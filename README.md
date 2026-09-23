@@ -1,40 +1,34 @@
-# Upper Air Observers website
+# Upper Air Observers — GitHub Pages site
 
-Bilingual (English / Persian) static company website for **Upper Air Observers — پایشگران جو بالا**.
+Production-oriented bilingual static website for **Upper Air Observers / پایشگران جو بالا**.
+
+## Publish at https://upperairobservers.github.io/
+
+The GitHub organization must own a repository named exactly:
+
+`upperairobservers.github.io`
+
+Upload the **contents** of this folder to the repository root. In GitHub:
+
+1. Settings → Pages
+2. Source: **Deploy from a branch**
+3. Branch: **main**
+4. Folder: **/(root)**
+5. Save
 
 ## Files
 
-- `index.html` — site structure and content
-- `styles.css` — responsive visual design, including RTL rules
-- `script.js` — EN/FA language switch, mobile menu and reveal effects
-- `.nojekyll` — tells GitHub Pages to serve the static files directly
+- `index.html` — page structure/content
+- `styles.css` — responsive design + RTL
+- `script.js` — English/Farsi switching
+- `assets/images/` — optimized versions of supplied UAO photographs/screenshots
+- `assets/docs/` — supplied DigiSonde catalogue PDFs
+- `.nojekyll` — disables Jekyll processing
 
-## Publish with the current repository
+## Persian font
 
-Your current repository is:
+The Persian version intentionally keeps the font stack from the first site version:
 
-`https://github.com/UpperAirObservers/UpperAirObservers`
+`Tahoma, "Segoe UI", Arial, sans-serif`
 
-If you publish that repository with GitHub Pages, the default project-site address will be:
-
-`https://upperairobservers.github.io/UpperAirObservers/`
-
-In GitHub open:
-
-**Repository → Settings → Pages → Build and deployment → Deploy from a branch → `main` → `/ (root)` → Save**
-
-## Cleaner address (recommended later)
-
-If you rename/create the organization Pages repository as:
-
-`UpperAirObservers.github.io`
-
-the default address becomes:
-
-`https://upperairobservers.github.io/`
-
-You can also connect a custom company domain later without redesigning the site.
-
-## Before public launch
-
-Replace the placeholder contact details in `index.html` with your official company email, telephone and address. The current visual radiosonde and receiver are intentionally generic illustrations; add real product photography/specifications only when those details are finalized.
+No external font download is required.

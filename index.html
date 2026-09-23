@@ -2,13 +2,13 @@
 <html lang="en" dir="ltr">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#071a2d">
-  <meta name="description" content="Upper Air Observers — radiosonde, upper-air sounding and meteorological data solutions. پایشگران جو بالا">
-  <meta property="og:title" content="Upper Air Observers | پایشگران جو بالا">
-  <meta property="og:description" content="Radiosonde, sounding systems and meteorological software for upper-air observation.">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#062b42">
+  <meta name="description" content="Upper Air Observers — DigiSonde radiosonde, ground-station hardware and DigiMon sounding software for upper-air observations.">
+  <meta property="og:title" content="Upper Air Observers | DigiSonde Upper-Air Sounding System">
+  <meta property="og:description" content="DigiSonde radiosonde, ground-station hardware and DigiMon sounding software.">
   <meta property="og:type" content="website">
-  <title>Upper Air Observers | پایشگران جو بالا</title>
+  <title>Upper Air Observers | DigiSonde Radiosonde System</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -17,11 +17,7 @@
   <header class="site-header" id="top">
     <div class="container nav-shell">
       <a class="brand" href="#home" aria-label="Upper Air Observers home">
-        <svg class="brand-symbol" viewBox="0 0 64 64" aria-hidden="true">
-          <path d="M32 5c-9 0-16 7.3-16 16.3C16 33.7 32 47 32 47s16-13.3 16-25.7C48 12.3 41 5 32 5Z"/>
-          <path d="M32 47v9M25 59h14"/>
-          <path d="M24 22c3.8-3.8 12.2-3.8 16 0M27 27c2.4-2.4 7.6-2.4 10 0"/>
-        </svg>
+        <span class="logo-chip"><img src="assets/images/uao-logo.webp" alt="UAO Upper Air Observers logo"></span>
         <span class="brand-copy">
           <strong data-i18n="brand">Upper Air Observers</strong>
           <small data-i18n="brandFa">پایشگران جو بالا</small>
@@ -33,11 +29,12 @@
       </button>
 
       <nav class="main-nav" id="main-nav" aria-label="Primary navigation">
-        <a href="#company" data-i18n="navCompany">Company</a>
-        <a href="#radiosonde" data-i18n="navRadiosonde">Radiosonde</a>
-        <a href="#systems" data-i18n="navSystems">Systems</a>
-        <a href="#software" data-i18n="navSoftware">Software</a>
-        <a href="#applications" data-i18n="navApplications">Applications</a>
+        <a href="#system" data-i18n="navSystem">System</a>
+        <a href="#radiosonde" data-i18n="navRadiosonde">DigiSonde</a>
+        <a href="#ground" data-i18n="navGround">Ground Station</a>
+        <a href="#software" data-i18n="navSoftware">DigiMon</a>
+        <a href="#field" data-i18n="navField">Field Work</a>
+        <a href="#downloads" data-i18n="navDownloads">Downloads</a>
         <a href="#contact" data-i18n="navContact">Contact</a>
       </nav>
 
@@ -51,240 +48,250 @@
 
   <main id="main">
     <section class="hero" id="home">
-      <div class="hero-atmosphere" aria-hidden="true">
-        <div class="orbital-line line-a"></div>
-        <div class="orbital-line line-b"></div>
-        <div class="hero-balloon">
-          <svg viewBox="0 0 180 300">
-            <path class="balloon-envelope" d="M90 8C44 8 13 48 13 96c0 58 46 100 66 113h22c20-13 66-55 66-113C167 48 136 8 90 8Z"/>
-            <path class="balloon-seam" d="M90 10c-18 47-18 149 0 198M90 10c18 47 18 149 0 198"/>
-            <path class="string" d="M90 209v46"/>
-            <rect class="sonde-box" x="73" y="255" width="34" height="26" rx="4"/>
-            <path class="sensor" d="M107 260h28m-7-6v13"/>
-          </svg>
-        </div>
-        <div class="signal-ring r1"></div><div class="signal-ring r2"></div><div class="signal-ring r3"></div>
-        <div class="earth-arc"></div>
-      </div>
-
+      <img class="hero-photo" src="assets/images/field-station-sunset.webp" alt="Upper Air Observers portable radiosonde receiving antenna during field operations">
+      <div class="hero-shade"></div>
       <div class="container hero-layout">
         <div class="hero-copy reveal">
-          <p class="kicker" data-i18n="heroKicker">UPPER-AIR OBSERVATION</p>
-          <h1 data-i18n="heroTitle">Measure the atmosphere.<br>Understand what happens above.</h1>
-          <p class="hero-lead" data-i18n="heroLead">Upper Air Observers develops solutions for radiosonde measurements, upper-air sounding workflows and meteorological data processing.</p>
+          <p class="eyebrow" data-i18n="heroKicker">UPPER-AIR SOUNDING SYSTEMS</p>
+          <h1 data-i18n="heroTitle">DigiSonde.<br>From balloon launch to atmospheric profile.</h1>
+          <p class="hero-lead" data-i18n="heroLead">A complete upper-air observation workflow built around the DigiSonde radiosonde, field-ready receiving hardware and DigiMon ground-station software.</p>
           <div class="hero-actions">
-            <a class="button primary" href="#radiosonde" data-i18n="heroPrimary">Explore upper-air sounding</a>
-            <a class="button secondary" href="#contact" data-i18n="heroSecondary">Contact us</a>
+            <a class="button primary" href="#system" data-i18n="heroPrimary">Explore the system</a>
+            <a class="button ghost" href="#downloads" data-i18n="heroSecondary">View catalogues</a>
           </div>
-          <div class="hero-meta" aria-label="Core measurement capabilities">
-            <div><strong>PTU</strong><span data-i18n="heroMeta1">Pressure · Temperature · Humidity</span></div>
-            <div><strong>GNSS</strong><span data-i18n="heroMeta2">Position · Wind calculation</span></div>
-            <div><strong>DATA</strong><span data-i18n="heroMeta3">Processing · QC · Export</span></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="category-strip" aria-label="Product categories">
-      <div class="container category-grid">
-        <a href="#radiosonde" class="category-card reveal">
-          <span class="index">01</span>
-          <div><h2 data-i18n="cat1">Radiosondes</h2><p data-i18n="cat1Text">Atmospheric measurement payloads for balloon ascents</p></div>
-          <span class="arrow" aria-hidden="true">↗</span>
-        </a>
-        <a href="#systems" class="category-card reveal">
-          <span class="index">02</span>
-          <div><h2 data-i18n="cat2">Sounding Systems</h2><p data-i18n="cat2Text">Reception, tracking and operational sounding infrastructure</p></div>
-          <span class="arrow" aria-hidden="true">↗</span>
-        </a>
-        <a href="#software" class="category-card reveal">
-          <span class="index">03</span>
-          <div><h2 data-i18n="cat3">Software</h2><p data-i18n="cat3Text">Quality control, post-processing and atmospheric products</p></div>
-          <span class="arrow" aria-hidden="true">↗</span>
-        </a>
-      </div>
-    </section>
-
-    <section class="section company-section" id="company">
-      <div class="container split-layout">
-        <div class="section-heading reveal">
-          <p class="kicker dark" data-i18n="companyKicker">UPPER AIR OBSERVERS</p>
-          <h2 data-i18n="companyTitle">Technology for observing the atmosphere above us</h2>
-        </div>
-        <div class="body-copy reveal">
-          <p class="large" data-i18n="companyText1">Upper Air Observers — پایشگران جو بالا — is focused on meteorological instrumentation and software for upper-air observations.</p>
-          <p data-i18n="companyText2">Our work connects atmospheric sensing, telemetry, data processing and operational meteorology. We aim to make sounding data dependable, traceable and practical from balloon launch through the final atmospheric profile.</p>
-          <div class="value-grid">
-            <div><span class="value-icon">△</span><strong data-i18n="value1">Measurement</strong><small data-i18n="value1Text">Vertical profiles of the atmosphere</small></div>
-            <div><span class="value-icon">⌁</span><strong data-i18n="value2">Processing</strong><small data-i18n="value2Text">Quality control and post-processing</small></div>
-            <div><span class="value-icon">◎</span><strong data-i18n="value3">Operations</strong><small data-i18n="value3Text">Sounding workflows and data delivery</small></div>
+          <div class="hero-facts" aria-label="System components">
+            <div><b>01</b><span data-i18n="fact1">DigiSonde radiosonde</span></div>
+            <div><b>02</b><span data-i18n="fact2">Ground-station hardware</span></div>
+            <div><b>03</b><span data-i18n="fact3">DigiMon software</span></div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section what-section" id="radiosonde">
-      <div class="container product-feature">
-        <div class="radiosonde-visual reveal" aria-hidden="true">
-          <div class="visual-label">U.A.O.</div>
-          <svg viewBox="0 0 560 520" class="sonde-illustration">
-            <defs>
-              <linearGradient id="bodyGrad" x1="0" x2="1"><stop offset="0" stop-color="#f8fbfe"/><stop offset="1" stop-color="#dfe8ef"/></linearGradient>
-            </defs>
-            <path class="sensor-boom" d="M325 166h150l38-28"/>
-            <path class="sensor-tip" d="M496 138h31"/>
-            <rect x="170" y="115" width="175" height="275" rx="18" fill="url(#bodyGrad)"/>
-            <path class="case-line" d="M170 206h175M257 115v275"/>
-            <circle cx="214" cy="160" r="16" class="logo-dot"/>
-            <text x="241" y="168" class="svg-brand">UAO</text>
-            <text x="196" y="250" class="svg-title">RADIOSONDE</text>
-            <text x="196" y="278" class="svg-sub">UPPER AIR OBSERVERS</text>
-            <rect x="196" y="307" width="123" height="44" rx="6" class="display-panel"/>
-            <path class="antenna-wire" d="M201 390c-9 47-32 71-78 102"/>
-            <path class="hanger" d="M255 115V67M239 68h32"/>
-          </svg>
-          <div class="measurement-pills"><span>T</span><span>RH</span><span>P</span><span>GNSS</span></div>
+    <section class="system-intro section" id="system">
+      <div class="container">
+        <div class="section-head center reveal">
+          <p class="eyebrow dark" data-i18n="systemKicker">ONE SOUNDING CHAIN</p>
+          <h2 data-i18n="systemTitle">Radiosonde, receiving hardware and sounding software — designed to work as one system.</h2>
+          <p data-i18n="systemLead">The DigiSonde measures atmospheric parameters aloft and sends telemetry by radio. The ground station receives the downlink and DigiMon supports the operational sounding workflow, from a new sounding through profile comparison and TEMP generation.</p>
         </div>
 
-        <div class="feature-copy reveal">
-          <p class="kicker dark" data-i18n="whatKicker">METEOROLOGICAL BALLOON ASCENTS</p>
-          <h2 data-i18n="whatTitle">What is a radiosonde?</h2>
-          <p class="large" data-i18n="whatText1">A radiosonde is a lightweight instrument carried into the atmosphere by a weather balloon. During ascent, it measures the state of the atmosphere and transmits observations to a ground receiving system.</p>
-          <p data-i18n="whatText2">From these measurements, meteorologists build a vertical profile of temperature, humidity, pressure and wind — essential information for weather analysis, forecasting and atmospheric research.</p>
-          <div class="measurements">
-            <div><span>°C</span><strong data-i18n="mTemp">Temperature</strong></div>
-            <div><span>%</span><strong data-i18n="mHum">Relative humidity</strong></div>
-            <div><span>hPa</span><strong data-i18n="mPressure">Pressure</strong></div>
-            <div><span>m/s</span><strong data-i18n="mWind">Wind</strong></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section dark-panel" id="systems">
-      <div class="container systems-layout">
-        <div class="systems-copy reveal">
-          <p class="kicker" data-i18n="systemsKicker">FROM SIGNAL TO PROFILE</p>
-          <h2 data-i18n="systemsTitle">Upper-air sounding systems</h2>
-          <p data-i18n="systemsText">A radiosonde is one part of the complete sounding chain. The ground system receives telemetry, follows the flight, calculates derived parameters and prepares meteorological data for operational use.</p>
-          <div class="process-list">
-            <div><b>01</b><span><strong data-i18n="step1">Launch</strong><small data-i18n="step1Text">Balloon and radiosonde preparation</small></span></div>
-            <div><b>02</b><span><strong data-i18n="step2">Receive</strong><small data-i18n="step2Text">Real-time telemetry acquisition</small></span></div>
-            <div><b>03</b><span><strong data-i18n="step3">Process</strong><small data-i18n="step3Text">PTU, GNSS and wind processing</small></span></div>
-            <div><b>04</b><span><strong data-i18n="step4">Deliver</strong><small data-i18n="step4Text">Profiles, reports and data export</small></span></div>
-          </div>
-        </div>
-
-        <div class="receiver-scene reveal" aria-hidden="true">
-          <div class="antenna-mast"><i></i><i></i><i></i><i></i></div>
-          <div class="receiver-unit">
-            <div class="receiver-top"><span>UAO</span><small>GROUND SYSTEM</small></div>
-            <div class="screen">
-              <div class="screen-head"><span>RADIOSONDE</span><span>LIVE</span></div>
-              <div class="screen-grid">
-                <div><small>FREQ</small><b>403.500</b></div>
-                <div><small>ALT</small><b>18.42 km</b></div>
-                <div><small>TEMP</small><b>−56.2 °C</b></div>
-                <div><small>WIND</small><b>28.4 m/s</b></div>
-              </div>
-              <div class="profile-mini"><i></i></div>
+        <div class="system-cards">
+          <article class="system-card reveal">
+            <div class="media portrait"><img src="assets/images/digisonde-ds03.webp" alt="DigiSonde DS-03 radiosonde"></div>
+            <div class="card-copy">
+              <span class="card-no">01</span>
+              <p class="card-tag" data-i18n="sondeTag">AIRBORNE INSTRUMENT</p>
+              <h3 data-i18n="sondeCardTitle">DigiSonde® Radiosonde</h3>
+              <p data-i18n="sondeCardText">Balloon-borne PTU and GNSS telemetry for building a vertical atmospheric profile during ascent.</p>
+              <a href="#radiosonde" data-i18n="learnSonde">Product details →</a>
             </div>
-            <div class="receiver-controls"><span></span><span></span><span></span><span></span></div>
+          </article>
+
+          <article class="system-card reveal">
+            <div class="media portrait"><img src="assets/images/field-portable-station.webp" alt="Portable ground station hardware in rugged field cases"></div>
+            <div class="card-copy">
+              <span class="card-no">02</span>
+              <p class="card-tag" data-i18n="groundTag">FIELD HARDWARE</p>
+              <h3 data-i18n="groundCardTitle">Ground Station</h3>
+              <p data-i18n="groundCardText">Receiving antennas, station electronics and portable field hardware for real-time radiosonde telemetry reception.</p>
+              <a href="#ground" data-i18n="learnGround">Hardware details →</a>
+            </div>
+          </article>
+
+          <article class="system-card reveal">
+            <div class="media software"><img src="assets/images/digimon-software.webp" alt="DigiMon radiosonde ground-station software interface"></div>
+            <div class="card-copy">
+              <span class="card-no">03</span>
+              <p class="card-tag" data-i18n="softwareTag">OPERATIONS & DATA</p>
+              <h3 data-i18n="softwareCardTitle">DigiMon® Software</h3>
+              <p data-i18n="softwareCardText">Sounding control, simulation, TEMP generation, ascent comparison and profile comparison in one operational interface.</p>
+              <a href="#software" data-i18n="learnSoftware">Software details →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section product-section" id="radiosonde">
+      <div class="container product-grid">
+        <div class="product-visual reveal">
+          <img src="assets/images/digisonde-ds03.webp" alt="DigiSonde DS-03 radiosonde photographed in the Upper Air Observers facility">
+          <div class="photo-badge"><span>DS-03</span><small data-i18n="actualProduct">Actual product photo</small></div>
+        </div>
+        <div class="product-copy reveal">
+          <p class="eyebrow dark" data-i18n="dsKicker">DIGISONDE®</p>
+          <h2 data-i18n="dsTitle">Upper-air telemetry for PTU and wind observations</h2>
+          <p class="lead" data-i18n="dsText">DigiSonde is carried aloft by a weather balloon, measures atmospheric variables and transmits the observations to the ground station by radio. Pressure, temperature, relative humidity and wind are used to form the vertical atmospheric profile.</p>
+
+          <div class="measurement-row">
+            <div><strong>1050–3</strong><span data-i18n="pressureRange">hPa pressure range</span></div>
+            <div><strong>−90–60</strong><span data-i18n="temperatureRange">°C temperature range</span></div>
+            <div><strong>1–99</strong><span data-i18n="humidityRange">% RH range</span></div>
+            <div><strong>1 Hz</strong><span data-i18n="measurementRate">measurement rate</span></div>
           </div>
+
+          <div class="spec-block">
+            <div class="spec-group">
+              <h3 data-i18n="ptuHead">PTU measurement</h3>
+              <dl>
+                <div><dt data-i18n="pressure">Pressure</dt><dd>1050–3 hPa · 0.1 hPa · ±1 hPa</dd></div>
+                <div><dt data-i18n="temperature">Temperature</dt><dd>−90–60 °C · 0.1 °C · ±0.5 °C</dd></div>
+                <div><dt data-i18n="humidity">Relative humidity</dt><dd>1–99% · 0.1% · ±3%</dd></div>
+              </dl>
+            </div>
+            <div class="spec-group">
+              <h3 data-i18n="txHead">Telemetry & general</h3>
+              <dl>
+                <div><dt data-i18n="frequency">Frequency</dt><dd>400–406 MHz</dd></div>
+                <div><dt data-i18n="output">Output power</dt><dd>100 mW</dd></div>
+                <div><dt data-i18n="modulation">Modulation</dt><dd>Digital FSK · 1200 baud</dd></div>
+                <div><dt data-i18n="weight">Weight</dt><dd>200 g <small data-i18n="inclBattery">including batteries</small></dd></div>
+              </dl>
+            </div>
+          </div>
+          <p class="source-note" data-i18n="specNote">Specifications shown here are taken from the supplied DigiSonde catalogue.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section dark-section" id="ground">
+      <div class="container ground-grid">
+        <div class="ground-copy reveal">
+          <p class="eyebrow" data-i18n="groundKicker">GROUND-STATION HARDWARE</p>
+          <h2 data-i18n="groundTitle">Built for radiosonde reception in fixed and portable field setups</h2>
+          <p class="lead dark-lead" data-i18n="groundText">The complete sounding chain includes a downlink receiving antenna, ground-station electronics and a GPS antenna. The photographs below show Upper Air Observers hardware in portable field operation and a fixed receiving installation.</p>
+          <div class="workflow-list">
+            <div><b>01</b><span><strong data-i18n="groundStep1">Receive</strong><small data-i18n="groundStep1Text">Capture DigiSonde telemetry during ascent</small></span></div>
+            <div><b>02</b><span><strong data-i18n="groundStep2">Track</strong><small data-i18n="groundStep2Text">Feed real-time observations to the sounding workstation</small></span></div>
+            <div><b>03</b><span><strong data-i18n="groundStep3">Operate</strong><small data-i18n="groundStep3Text">Use rugged portable hardware or a fixed station configuration</small></span></div>
+          </div>
+        </div>
+        <div class="ground-gallery reveal">
+          <figure class="ground-main">
+            <img src="assets/images/field-portable-station.webp" alt="Portable Upper Air Observers ground-station hardware with two rugged cases, antennas and laptop">
+            <figcaption data-i18n="portableCaption">Portable field ground-station configuration</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/images/fixed-ground-station.webp" alt="Fixed radiosonde receiving and GPS antenna installation">
+            <figcaption data-i18n="fixedCaption">Fixed receiving / GPS antenna installation</figcaption>
+          </figure>
         </div>
       </div>
     </section>
 
     <section class="section software-section" id="software">
-      <div class="container software-layout">
-        <div class="software-ui reveal" aria-label="Illustrative meteorological software interface">
-          <div class="window-top"><span></span><span></span><span></span><b>Upper Air Processing</b></div>
-          <div class="window-body">
-            <aside><b>Sounding</b><span>Live profile</span><span>PTU data</span><span>Wind</span><span>Standard levels</span><span>Export</span></aside>
-            <div class="plot-area">
-              <div class="plot-title">Temperature / Humidity / Pressure</div>
-              <svg viewBox="0 0 520 300" preserveAspectRatio="none">
-                <g class="grid-lines"><path d="M0 50h520M0 100h520M0 150h520M0 200h520M0 250h520M86 0v300M173 0v300M260 0v300M347 0v300M434 0v300"/></g>
-                <path class="temp-line" d="M86 286C105 259 101 238 142 214S174 170 205 152s30-39 61-62 54-34 92-73"/>
-                <path class="hum-line" d="M332 286c-58-28-8-57-66-77s14-44-35-68 6-42-30-65-13-34-42-59"/>
-              </svg>
-              <div class="plot-legend"><span><i class="temp-dot"></i>Temperature</span><span><i class="hum-dot"></i>Humidity</span></div>
-            </div>
-          </div>
+      <div class="container software-grid">
+        <div class="software-window reveal">
+          <div class="window-bar"><span></span><span></span><span></span><b>DigiMon®</b></div>
+          <img src="assets/images/digimon-software.webp" alt="DigiMon software main screen with New Sounding, Load Simulation, Generate TEMP, Compare Ascents and Compare Profiles functions">
         </div>
-
         <div class="software-copy reveal">
-          <p class="kicker dark" data-i18n="softwareKicker">METEOROLOGICAL DATA</p>
-          <h2 data-i18n="softwareTitle">Processing software for the sounding workflow</h2>
-          <p class="large" data-i18n="softwareText">Upper-air measurements become useful when they are processed consistently. Our software work focuses on correction, quality control, reconstruction, visualization and meteorological output generation.</p>
-          <ul class="feature-checks">
-            <li data-i18n="softwareF1">Real-time sounding display</li>
-            <li data-i18n="softwareF2">Temperature and humidity post-processing</li>
-            <li data-i18n="softwareF3">Gap detection and profile reconstruction</li>
-            <li data-i18n="softwareF4">Standard-level and report generation</li>
-            <li data-i18n="softwareF5">Data export for operational workflows</li>
+          <p class="eyebrow dark" data-i18n="softwareKicker">DIGIMON® GROUND STATION & SOUNDING SOFTWARE</p>
+          <h2 data-i18n="softwareTitle">The operational interface for a sounding campaign</h2>
+          <p class="lead" data-i18n="softwareText">DigiMon brings sounding operations and profile review into one interface. The supplied software screen includes functions for starting a new sounding, loading a simulation, generating TEMP output and comparing ascents or profiles.</p>
+          <ul class="feature-list">
+            <li data-i18n="softwareF1">New sounding workflow</li>
+            <li data-i18n="softwareF2">Load simulation</li>
+            <li data-i18n="softwareF3">Generate TEMP</li>
+            <li data-i18n="softwareF4">Compare ascents</li>
+            <li data-i18n="softwareF5">Compare profiles</li>
+            <li data-i18n="softwareF6">User and system settings</li>
           </ul>
         </div>
       </div>
     </section>
 
-    <section class="section applications-section" id="applications">
+    <section class="signal-chain">
       <div class="container">
-        <div class="section-heading inline-heading reveal">
-          <div><p class="kicker dark" data-i18n="applicationsKicker">WHY UPPER-AIR DATA MATTERS</p><h2 data-i18n="applicationsTitle">One ascent. A vertical picture of the atmosphere.</h2></div>
-          <p data-i18n="applicationsLead">Radiosonde observations support meteorological operations wherever the vertical structure of the atmosphere matters.</p>
+        <div class="section-head center reveal">
+          <p class="eyebrow dark" data-i18n="chainKicker">MEASUREMENT FLOW</p>
+          <h2 data-i18n="chainTitle">From the balloon to usable meteorological data</h2>
         </div>
-        <div class="application-grid">
-          <article class="application-card reveal"><span>01</span><h3 data-i18n="app1">Weather forecasting</h3><p data-i18n="app1Text">Atmospheric profiles provide observations used in synoptic analysis and numerical weather prediction.</p></article>
-          <article class="application-card reveal"><span>02</span><h3 data-i18n="app2">Aviation meteorology</h3><p data-i18n="app2Text">Wind, temperature and stability profiles help characterize conditions through the troposphere and lower stratosphere.</p></article>
-          <article class="application-card reveal"><span>03</span><h3 data-i18n="app3">Atmospheric research</h3><p data-i18n="app3Text">High-resolution vertical observations support field campaigns, validation studies and atmospheric science.</p></article>
-          <article class="application-card reveal"><span>04</span><h3 data-i18n="app4">Environmental monitoring</h3><p data-i18n="app4Text">Soundings help describe atmospheric transport, boundary-layer structure and dispersion conditions.</p></article>
+        <div class="chain-grid reveal">
+          <div><span class="chain-icon">◯</span><b>01</b><strong data-i18n="chain1">Balloon ascent</strong><small data-i18n="chain1Text">DigiSonde rises through the atmosphere</small></div>
+          <i>→</i>
+          <div><span class="chain-icon">⌁</span><b>02</b><strong data-i18n="chain2">PTU + GNSS</strong><small data-i18n="chain2Text">Atmospheric and position observations</small></div>
+          <i>→</i>
+          <div><span class="chain-icon">)))</span><b>03</b><strong data-i18n="chain3">Radio downlink</strong><small data-i18n="chain3Text">Telemetry transmitted to the ground</small></div>
+          <i>→</i>
+          <div><span class="chain-icon">⌂</span><b>04</b><strong data-i18n="chain4">Ground station</strong><small data-i18n="chain4Text">Receiving and station hardware</small></div>
+          <i>→</i>
+          <div><span class="chain-icon">∿</span><b>05</b><strong data-i18n="chain5">DigiMon</strong><small data-i18n="chain5Text">Sounding, comparison and output workflow</small></div>
         </div>
       </div>
     </section>
 
-    <section class="section data-section">
-      <div class="container data-callout reveal">
-        <div>
-          <p class="kicker" data-i18n="dataKicker">VERTICAL ATMOSPHERIC PROFILE</p>
-          <h2 data-i18n="dataTitle">From surface conditions to the stratosphere</h2>
-          <p data-i18n="dataText">A sounding records a continuously changing atmosphere. The value is not only in each individual measurement, but in the complete vertical profile and the quality of the final data product.</p>
+    <section class="section field-section" id="field">
+      <div class="container">
+        <div class="section-head split-head reveal">
+          <div>
+            <p class="eyebrow dark" data-i18n="fieldKicker">FIELD & COMPARATIVE TESTING</p>
+            <h2 data-i18n="fieldTitle">Hardware shown in real sounding preparation and test environments</h2>
+          </div>
+          <p data-i18n="fieldLead">These photographs are from Upper Air Observers development and field work. One image shows comparative preparation with a GRAW radiosonde; no performance claim is implied by the photograph.</p>
         </div>
-        <div class="profile-column" aria-hidden="true">
-          <div class="height-scale"><span>30 km</span><span>20 km</span><span>10 km</span><span>0 km</span></div>
-          <svg viewBox="0 0 240 420" preserveAspectRatio="none">
-            <path class="profile-path" d="M163 410c-49-35-18-73-72-104s63-61 13-104 88-49 20-95 51-59 19-97"/>
-          </svg>
-          <div class="tropopause">TROPOPAUSE</div>
+        <div class="field-grid">
+          <figure class="wide reveal"><img src="assets/images/balloon-preparation.webp" alt="Weather balloon preparation for a radiosonde launch"><figcaption data-i18n="fieldCap1">Balloon preparation before sounding</figcaption></figure>
+          <figure class="reveal"><img src="assets/images/comparison-graw-uao.webp" alt="Upper Air Observers DigiSonde and GRAW radiosonde prepared for comparison"><figcaption data-i18n="fieldCap2">Comparative preparation with a GRAW radiosonde</figcaption></figure>
+          <figure class="reveal"><img src="assets/images/equipment-lab.webp" alt="Upper Air Observers portable receiving systems and DigiSonde units in the lab"><figcaption data-i18n="fieldCap3">Portable station hardware and DigiSonde units</figcaption></figure>
+          <figure class="wide reveal"><img src="assets/images/field-station-sunset.webp" alt="Portable radiosonde antenna system at sunset"><figcaption data-i18n="fieldCap4">Field receiving antenna setup</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section applications-section">
+      <div class="container">
+        <div class="section-head center reveal">
+          <p class="eyebrow dark" data-i18n="appKicker">APPLICATION AREAS</p>
+          <h2 data-i18n="appTitle">Upper-air measurements for operational weather and atmospheric work</h2>
+          <p data-i18n="appLead">The supplied UAO catalogue identifies meteorology, transportation and energy as application areas, with sounding data supporting organizations such as meteorological institutes, airports and airlines, transport authorities and renewable-energy operators.</p>
+        </div>
+        <div class="app-grid reveal">
+          <div><span>01</span><h3 data-i18n="app1">Meteorology</h3><p data-i18n="app1Text">Vertical atmospheric observations for operational analysis and forecasting workflows.</p></div>
+          <div><span>02</span><h3 data-i18n="app2">Transportation</h3><p data-i18n="app2Text">Upper-air information relevant to aviation and other weather-sensitive transport operations.</p></div>
+          <div><span>03</span><h3 data-i18n="app3">Energy</h3><p data-i18n="app3Text">Atmospheric observations for weather-sensitive energy and renewable-energy activities.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section downloads-section" id="downloads">
+      <div class="container downloads-grid">
+        <div class="section-head reveal">
+          <p class="eyebrow" data-i18n="downloadsKicker">DOCUMENTATION</p>
+          <h2 data-i18n="downloadsTitle">DigiSonde product material</h2>
+          <p data-i18n="downloadsLead">The documents below are the supplied Upper Air Observers catalogues used as the technical source for this product introduction.</p>
+        </div>
+        <div class="download-list reveal">
+          <a href="assets/docs/DigiSonde-Catalogue-FA.pdf" target="_blank" rel="noopener"><span><b>FA</b><strong data-i18n="doc1">DigiSonde catalogue — Persian</strong></span><em>PDF ↗</em></a>
+          <a href="assets/docs/DigiSonde-Applications-EN.pdf" target="_blank" rel="noopener"><span><b>EN</b><strong data-i18n="doc2">DigiSonde applications — English</strong></span><em>PDF ↗</em></a>
+          <a href="assets/docs/DigiSonde-Specifications-EN.pdf" target="_blank" rel="noopener"><span><b>EN</b><strong data-i18n="doc3">DigiSonde specifications — English</strong></span><em>PDF ↗</em></a>
         </div>
       </div>
     </section>
 
     <section class="contact-section" id="contact">
-      <div class="container contact-layout">
+      <div class="container contact-grid">
         <div class="reveal">
-          <p class="kicker" data-i18n="contactKicker">CONTACT UPPER AIR OBSERVERS</p>
-          <h2 data-i18n="contactTitle">Talk to us about your upper-air observation needs.</h2>
-          <p data-i18n="contactText">For radiosonde systems, software, technical cooperation or project enquiries, contact our team.</p>
+          <p class="eyebrow" data-i18n="contactKicker">UPPER AIR OBSERVERS</p>
+          <h2 data-i18n="contactTitle">Upper-air observation systems from Tehran, Iran.</h2>
+          <p data-i18n="contactText">For DigiSonde radiosondes, ground-station hardware, DigiMon software or technical cooperation, contact Upper Air Observers.</p>
         </div>
-        <div class="contact-card reveal">
-          <div><small data-i18n="contactEmail">EMAIL</small><a href="mailto:info@upperairobservers.com">info@upperairobservers.com</a></div>
-          <div><small data-i18n="contactWeb">WEB</small><span>upperairobservers.github.io</span></div>
-          <p class="contact-note" data-i18n="contactNote">Replace these placeholders with your official company email, telephone and address when available.</p>
+        <div class="contact-panel reveal">
+          <div><small data-i18n="locationLabel">LOCATION</small><strong data-i18n="location">Tehran, Iran</strong></div>
+          <div><small data-i18n="webLabel">WEB</small><strong>upperairobservers.github.io</strong></div>
+          <div><small data-i18n="companyLabel">COMPANY</small><strong data-i18n="companyName">Upper Air Observers / پایشگران جو بالا</strong></div>
         </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container footer-main">
-      <a class="brand footer-brand" href="#top">
-        <svg class="brand-symbol" viewBox="0 0 64 64" aria-hidden="true"><path d="M32 5c-9 0-16 7.3-16 16.3C16 33.7 32 47 32 47s16-13.3 16-25.7C48 12.3 41 5 32 5Z"/><path d="M32 47v9M25 59h14"/></svg>
-        <span class="brand-copy"><strong data-i18n="brand">Upper Air Observers</strong><small data-i18n="brandFa">پایشگران جو بالا</small></span>
-      </a>
-      <div class="footer-links"><a href="#company" data-i18n="navCompany">Company</a><a href="#radiosonde" data-i18n="navRadiosonde">Radiosonde</a><a href="#systems" data-i18n="navSystems">Systems</a><a href="#software" data-i18n="navSoftware">Software</a><a href="#contact" data-i18n="navContact">Contact</a></div>
+    <div class="container footer-row">
+      <span>© <span id="year"></span> Upper Air Observers</span>
+      <span data-i18n="footerLocation">Tehran, Iran</span>
+      <a href="#top" data-i18n="backTop">Back to top ↑</a>
     </div>
-    <div class="container footer-bottom"><span>© <span id="year"></span> Upper Air Observers</span><span data-i18n="footerRights">All rights reserved.</span></div>
   </footer>
 
   <script src="script.js"></script>
