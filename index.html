@@ -9,9 +9,6 @@
   <meta property="og:description" content="DigiSonde radiosonde, ground-station hardware and DigiMon sounding software.">
   <meta property="og:type" content="website">
   <title>Upper Air Observers | DigiSonde Radiosonde System</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Vazirmatn:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -103,12 +100,12 @@
           </article>
 
           <article class="system-card reveal">
-            <div class="media software"><img src="assets/images/digimon-software.webp" alt="DigiMon radiosonde ground-station software interface"></div>
+            <div class="media software"><img src="assets/images/digimon-ground-check.webp" alt="DigiMon ground check software screen"></div>
             <div class="card-copy">
               <span class="card-no">03</span>
               <p class="card-tag" data-i18n="softwareTag">OPERATIONS & DATA</p>
               <h3 data-i18n="softwareCardTitle">DigiMon® Software</h3>
-              <p data-i18n="softwareCardText">Sounding control, simulation, TEMP generation, ascent comparison and profile comparison in one operational interface.</p>
+              <p data-i18n="softwareCardText">Sounding control, ground check, TEMP generation, ascent comparison and profile comparison in one operational interface.</p>
               <a href="#software" data-i18n="learnSoftware">Software details →</a>
             </div>
           </article>
@@ -185,20 +182,26 @@
 
     <section class="section software-section" id="software">
       <div class="container software-grid">
-        <div class="software-window reveal">
-          <div class="window-bar"><span></span><span></span><span></span><b>DigiMon®</b></div>
-          <img src="assets/images/digimon-software.webp" alt="DigiMon software main screen with New Sounding, Load Simulation, Generate TEMP, Compare Ascents and Compare Profiles functions">
+        <div class="software-stack reveal">
+          <div class="software-window">
+            <div class="window-bar"><span></span><span></span><span></span><b>DigiMon®</b></div>
+            <img src="assets/images/digimon-software.webp" alt="DigiMon software main screen with New Sounding, Load Simulation, Generate TEMP, Compare Ascents and Compare Profiles functions">
+          </div>
+          <div class="software-window secondary-window">
+            <div class="window-bar"><span></span><span></span><span></span><b data-i18n="groundCheckLabel">Ground Check</b></div>
+            <img src="assets/images/digimon-ground-check.webp" alt="DigiMon software ground check screen showing surface data and station position">
+          </div>
         </div>
         <div class="software-copy reveal">
           <p class="eyebrow dark" data-i18n="softwareKicker">DIGIMON® GROUND STATION & SOUNDING SOFTWARE</p>
           <h2 data-i18n="softwareTitle">The operational interface for a sounding campaign</h2>
-          <p class="lead" data-i18n="softwareText">DigiMon brings sounding operations and profile review into one interface. The supplied software screen includes functions for starting a new sounding, loading a simulation, generating TEMP output and comparing ascents or profiles.</p>
+          <p class="lead" data-i18n="softwareText">DigiMon brings sounding operations and profile review into one interface. The supplied software screens include functions for starting a new sounding, performing ground check, loading a simulation, generating TEMP output and comparing ascents or profiles.</p>
           <ul class="feature-list">
             <li data-i18n="softwareF1">New sounding workflow</li>
-            <li data-i18n="softwareF2">Load simulation</li>
-            <li data-i18n="softwareF3">Generate TEMP</li>
-            <li data-i18n="softwareF4">Compare ascents</li>
-            <li data-i18n="softwareF5">Compare profiles</li>
+            <li data-i18n="softwareF2">Ground check and station position</li>
+            <li data-i18n="softwareF3">Load simulation</li>
+            <li data-i18n="softwareF4">Generate TEMP</li>
+            <li data-i18n="softwareF5">Compare ascents and profiles</li>
             <li data-i18n="softwareF6">User and system settings</li>
           </ul>
         </div>
@@ -225,6 +228,32 @@
       </div>
     </section>
 
+    <section class="section flight-section">
+      <div class="container">
+        <div class="section-head split-head reveal">
+          <div>
+            <p class="eyebrow dark" data-i18n="flightKicker">ACTUAL FLIGHT IMAGERY</p>
+            <h2 data-i18n="flightTitle">Your DigiSonde shown from pre-launch setup to near-space flight.</h2>
+          </div>
+          <p data-i18n="flightLead">These added photos show the actual Upper Air Observers radiosonde in comparative test preparation on the runway and during flight at high altitude.</p>
+        </div>
+        <div class="flight-grid">
+          <figure class="flight-card tall reveal">
+            <img src="assets/images/runway-comparison.webp" alt="Comparative runway setup showing the Upper Air Observers DigiSonde and another radiosonde during preparation">
+            <figcaption data-i18n="flightCap1">Runway preparation with the Upper Air Observers DigiSonde</figcaption>
+          </figure>
+          <figure class="flight-card reveal">
+            <img src="assets/images/stratosphere-flight-1.webp" alt="Upper Air Observers DigiSonde in flight above the clouds">
+            <figcaption data-i18n="flightCap2">Actual DigiSonde in flight above the clouds</figcaption>
+          </figure>
+          <figure class="flight-card reveal">
+            <img src="assets/images/stratosphere-flight-2.webp" alt="Upper Air Observers DigiSonde in high-altitude flight with Earth visible below">
+            <figcaption data-i18n="flightCap3">High-altitude view during DigiSonde ascent</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
     <section class="section field-section" id="field">
       <div class="container">
         <div class="section-head split-head reveal">
@@ -234,7 +263,7 @@
           </div>
           <p data-i18n="fieldLead">These photographs are from Upper Air Observers development and field work. One image shows comparative preparation with a GRAW radiosonde; no performance claim is implied by the photograph.</p>
         </div>
-        <div class="field-grid">
+        <div class="field-grid field-grid-expanded">
           <figure class="wide reveal"><img src="assets/images/balloon-preparation.webp" alt="Weather balloon preparation for a radiosonde launch"><figcaption data-i18n="fieldCap1">Balloon preparation before sounding</figcaption></figure>
           <figure class="reveal"><img src="assets/images/comparison-graw-uao.webp" alt="Upper Air Observers DigiSonde and GRAW radiosonde prepared for comparison"><figcaption data-i18n="fieldCap2">Comparative preparation with a GRAW radiosonde</figcaption></figure>
           <figure class="reveal"><img src="assets/images/equipment-lab.webp" alt="Upper Air Observers portable receiving systems and DigiSonde units in the lab"><figcaption data-i18n="fieldCap3">Portable station hardware and DigiSonde units</figcaption></figure>
