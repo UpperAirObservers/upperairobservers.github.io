@@ -188,7 +188,15 @@ html[dir="rtl"] h1,html[dir="rtl"] h2{letter-spacing:0}html[dir="rtl"] .eyebrow{
 .hero-sonde::before,.hero-sonde::after{display:none}
 .hero-sonde-label,.hero-sonde-top,.hero-sonde-shadow{display:none}
 .hero-sonde-wrap{width:310px;height:500px;animation:sondeFloat 8.5s ease-in-out infinite}
+<<<<<<< HEAD
 .hero-sonde-wrap .hero-sonde{left:141px;top:336px;width:92px;height:122px}
+=======
+<<<<<<< HEAD
+.hero-sonde-wrap .hero-sonde{left:141px;top:336px;width:92px;height:122px}
+=======
+.hero-sonde-wrap .hero-sonde{left:132px;top:336px;width:92px;height:122px}
+>>>>>>> e629ef0a78d3d083080710abe81e6dcb45571212
+>>>>>>> 86ea136bd5aaee95d683a704a3f9e4fdab76dcf2
 .hero-sonde-wrap .hero-cable{left:176px;top:250px;width:2px;height:102px;background:linear-gradient(180deg,rgba(255,255,255,.92),rgba(255,255,255,.62));transform-origin:top center;animation:cableSway 9s ease-in-out infinite;z-index:4;pointer-events:none}
 .hero-sonde-wrap .hero-sonde-tail{display:none}
 .hero-sonde-wrap .signal-rings{left:calc(50% - 9px);bottom:-8px;width:150px;height:76px;opacity:1;transform:translateX(-50%);filter:drop-shadow(0 0 18px rgba(79,225,255,.42));z-index:5}
@@ -197,7 +205,15 @@ html[dir="rtl"] h1,html[dir="rtl"] h2{letter-spacing:0}html[dir="rtl"] .eyebrow{
 .system-card .media img{transition:transform .35s ease}
 
 @media(max-width:720px){
+<<<<<<< HEAD
   .hero-sonde-wrap .hero-sonde{left:113px;top:282px;width:86px;height:114px}
+=======
+<<<<<<< HEAD
+  .hero-sonde-wrap .hero-sonde{left:113px;top:282px;width:86px;height:114px}
+=======
+  .hero-sonde-wrap .hero-sonde{left:104px;top:282px;width:86px;height:114px}
+>>>>>>> e629ef0a78d3d083080710abe81e6dcb45571212
+>>>>>>> 86ea136bd5aaee95d683a704a3f9e4fdab76dcf2
   .hero-sonde-wrap .hero-cable{left:146px;top:184px;width:2px;height:112px;background:linear-gradient(180deg,rgba(255,255,255,.92),rgba(255,255,255,.62));background-size:auto;z-index:4;pointer-events:none}
   .hero-sonde-wrap .signal-rings{left:calc(48% - 7px);bottom:-5px;width:124px;height:62px}
   .signal-rings span:nth-child(1){width:42px;height:20px}
