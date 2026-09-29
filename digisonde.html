@@ -37,10 +37,10 @@
         <a href="index.html#contact" data-i18n="navContact">Contact</a>
       </nav>
 
-      <div class="language-control" aria-label="Language">
-        <button type="button" class="lang-btn active" data-lang="en">EN</button>
-        <span aria-hidden="true">/</span>
-        <button type="button" class="lang-btn" data-lang="fa">FA</button>
+      <div class="language-control" aria-label="Choose language">
+        <button type="button" class="lang-btn active" data-lang="en" aria-label="Switch to English">English</button>
+        <span class="lang-divider" aria-hidden="true">/</span>
+        <button type="button" class="lang-btn lang-btn-fa" data-lang="fa" aria-label="تغییر زبان به فارسی">فارسی</button>
       </div>
     </div>
   </header>
@@ -175,11 +175,39 @@
   </div>
 </section>
 
+<section class="section comparison-test-section">
+  <div class="container">
+    <div class="section-head center comparison-test-head reveal">
+      <p class="eyebrow dark" data-i18n="comparisonKicker">COMPARISON ASCENT TESTS</p>
+      <h2 data-i18n="comparisonTitle">DigiSonde in comparative sounding tests</h2>
+      <p data-i18n="comparisonLead">Field photographs from comparative ascents conducted alongside other operational radiosondes. The images document the test setups and do not, by themselves, imply comparative performance results.</p>
+    </div>
+    <div class="comparison-test-grid reveal">
+      <figure class="comparison-test-card">
+        <div class="comparison-test-image">
+          <img src="assets/images/comparison-m20-imet2.webp" alt="Comparison ascent setup with M20 and iMet-2 radiosondes" loading="lazy">
+        </div>
+        <figcaption data-i18n="comparisonCap1">Comparison ascent with M20 and iMet-2 radiosondes</figcaption>
+      </figure>
+      <figure class="comparison-test-card">
+        <div class="comparison-test-image">
+          <img src="assets/images/comparison-graw-dfm17.webp" alt="Comparison ascent setup with GRAW DFM-17 radiosonde" loading="lazy">
+        </div>
+        <figcaption data-i18n="comparisonCap2">Comparison ascent with GRAW DFM-17 radiosonde</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
 
   </main>
   <footer class="site-footer">
     <div class="container footer-row">
       <span>© <span id="year"></span> Upper Air Observers</span>
+      <div class="footer-contact-links">
+        <a href="mailto:uaobservers.contact@gmail.com" aria-label="Email Upper Air Observers">uaobservers.contact@gmail.com</a>
+        <a href="https://www.linkedin.com/company/upper-air-observers" target="_blank" rel="noopener noreferrer" aria-label="Upper Air Observers on LinkedIn">LinkedIn ↗</a>
+      </div>
       <span data-i18n="footerLocation">Tehran, Iran</span>
       <a href="#top" data-i18n="backTop">Back to top ↑</a>
     </div>

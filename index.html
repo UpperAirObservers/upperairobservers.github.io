@@ -38,10 +38,10 @@
         <a href="index.html#contact" data-i18n="navContact">Contact</a>
       </nav>
 
-      <div class="language-control" aria-label="Language">
-        <button type="button" class="lang-btn active" data-lang="en">EN</button>
-        <span aria-hidden="true">/</span>
-        <button type="button" class="lang-btn" data-lang="fa">FA</button>
+      <div class="language-control" aria-label="Choose language">
+        <button type="button" class="lang-btn active" data-lang="en" aria-label="Switch to English">English</button>
+        <span class="lang-divider" aria-hidden="true">/</span>
+        <button type="button" class="lang-btn lang-btn-fa" data-lang="fa" aria-label="تغییر زبان به فارسی">فارسی</button>
       </div>
     </div>
   </header>
@@ -200,7 +200,9 @@
         </div>
         <div class="contact-panel reveal">
           <div><small data-i18n="locationLabel">LOCATION</small><strong data-i18n="location">Tehran, Iran</strong></div>
-          <div><small data-i18n="webLabel">WEB</small><strong>upperairobservers.github.io</strong></div>
+          <div><small data-i18n="emailLabel">EMAIL</small><strong><a class="contact-link" href="mailto:uaobservers.contact@gmail.com">uaobservers.contact@gmail.com</a></strong></div>
+          <div><small data-i18n="linkedinLabel">LINKEDIN</small><strong><a class="contact-link external-link" href="https://www.linkedin.com/company/upper-air-observers" target="_blank" rel="noopener noreferrer">Upper Air Observers ↗</a></strong></div>
+          <div><small data-i18n="webLabel">WEB</small><strong><a class="contact-link" href="https://upperairobservers.github.io/">upperairobservers.github.io</a></strong></div>
           <div><small data-i18n="companyLabel">COMPANY</small><strong data-i18n="companyName">Upper Air Observers / پایشگران جو بالا</strong></div>
         </div>
       </div>
@@ -209,6 +211,10 @@
   <footer class="site-footer">
     <div class="container footer-row">
       <span>© <span id="year"></span> Upper Air Observers</span>
+      <div class="footer-contact-links">
+        <a href="mailto:uaobservers.contact@gmail.com" aria-label="Email Upper Air Observers">uaobservers.contact@gmail.com</a>
+        <a href="https://www.linkedin.com/company/upper-air-observers" target="_blank" rel="noopener noreferrer" aria-label="Upper Air Observers on LinkedIn">LinkedIn ↗</a>
+      </div>
       <span data-i18n="footerLocation">Tehran, Iran</span>
       <a href="#top" data-i18n="backTop">Back to top ↑</a>
     </div>

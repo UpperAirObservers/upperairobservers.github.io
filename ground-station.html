@@ -37,10 +37,10 @@
         <a href="index.html#contact" data-i18n="navContact">Contact</a>
       </nav>
 
-      <div class="language-control" aria-label="Language">
-        <button type="button" class="lang-btn active" data-lang="en">EN</button>
-        <span aria-hidden="true">/</span>
-        <button type="button" class="lang-btn" data-lang="fa">FA</button>
+      <div class="language-control" aria-label="Choose language">
+        <button type="button" class="lang-btn active" data-lang="en" aria-label="Switch to English">English</button>
+        <span class="lang-divider" aria-hidden="true">/</span>
+        <button type="button" class="lang-btn lang-btn-fa" data-lang="fa" aria-label="تغییر زبان به فارسی">فارسی</button>
       </div>
     </div>
   </header>
@@ -119,6 +119,10 @@
   <footer class="site-footer">
     <div class="container footer-row">
       <span>© <span id="year"></span> Upper Air Observers</span>
+      <div class="footer-contact-links">
+        <a href="mailto:uaobservers.contact@gmail.com" aria-label="Email Upper Air Observers">uaobservers.contact@gmail.com</a>
+        <a href="https://www.linkedin.com/company/upper-air-observers" target="_blank" rel="noopener noreferrer" aria-label="Upper Air Observers on LinkedIn">LinkedIn ↗</a>
+      </div>
       <span data-i18n="footerLocation">Tehran, Iran</span>
       <a href="#top" data-i18n="backTop">Back to top ↑</a>
     </div>
