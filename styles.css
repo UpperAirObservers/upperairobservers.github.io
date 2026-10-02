@@ -296,4 +296,164 @@ main,section,.container,.page-hero-grid,.page-section-grid,.refined-software-gri
   .spec-table thead th,.spec-table tbody th,.spec-table tbody td{padding:8px 4px}
 }
 
-html[dir="rtl"] .spec-table thead th,html[dir="rtl"] .spec-table tbody th,html[dir="rtl"] .spec-table tbody td{text-align:right}
+
+/* Search-friendly product naming: visible alternate spellings */
+.product-name-variants{margin:-12px 0 28px;padding:11px 14px;border:1px solid rgba(108,226,225,.22);border-radius:10px;background:rgba(108,226,225,.07);color:#c7dbe6;font-size:13px;line-height:1.8}
+.product-name-variants strong{color:#fff;font-weight:800}
+html[dir="rtl"] .product-name-variants{font-family:"UAOPersian",Tahoma,"Segoe UI",Arial,sans-serif}
+@media(max-width:720px){.product-name-variants{margin-top:-8px;font-size:12px;padding:10px 12px}}
+
+
+/* DigiSonde table direction + compact two-column tables */
+/* Keep the table grid itself left-to-right in Persian so columns stay in the
+   same physical order as the English specification tables. */
+html[dir="rtl"] .spec-table{direction:ltr}
+html[dir="rtl"] .spec-table thead th,
+html[dir="rtl"] .spec-table tbody th{
+  direction:rtl;
+  text-align:right;
+}
+html[dir="rtl"] .spec-table tbody td{
+  direction:ltr;
+  text-align:left;
+  unicode-bidi:isolate;
+}
+html[dir="rtl"] .spec-table thead th{
+  text-transform:none;
+  letter-spacing:0;
+}
+
+/* Wind and telemetry/general are only two columns, so they should always fit
+   their card instead of creating a horizontal scrollbar. */
+.spec-table-wrap-simple{
+  overflow-x:hidden!important;
+}
+.spec-table-simple{
+  width:100%;
+  min-width:0!important;
+  max-width:100%;
+  table-layout:fixed;
+  white-space:normal;
+}
+.spec-table-simple thead th,
+.spec-table-simple tbody th,
+.spec-table-simple tbody td{
+  white-space:normal;
+  overflow-wrap:break-word;
+  word-break:normal;
+}
+.spec-table-simple thead th:first-child,
+.spec-table-simple tbody th{
+  width:44%;
+}
+.spec-table-simple thead th:last-child,
+.spec-table-simple tbody td{
+  width:56%;
+}
+
+@media(max-width:720px){
+  .spec-table-wrap-simple{padding-left:6px;padding-right:6px}
+  .spec-table-simple{font-size:10.5px}
+  .spec-table-simple thead th:first-child,
+  .spec-table-simple tbody th{width:52%}
+  .spec-table-simple thead th:last-child,
+  .spec-table-simple tbody td{width:48%}
+  .spec-table-simple thead th,
+  .spec-table-simple tbody th,
+  .spec-table-simple tbody td{padding:9px 5px;line-height:1.4}
+}
+
+@media(max-width:380px){
+  .spec-table-simple{font-size:9.5px}
+  .spec-table-simple thead th,
+  .spec-table-simple tbody th,
+  .spec-table-simple tbody td{padding:8px 4px}
+}
+
+
+/* Final specification table alignment + justified content text */
+/* Keep English tables in their natural LTR order. Numeric columns share the
+   exact same widths/alignment between header and body. */
+.spec-table:not(.spec-table-simple){table-layout:fixed}
+.spec-table:not(.spec-table-simple) thead th:first-child,
+.spec-table:not(.spec-table-simple) tbody th{width:28%}
+.spec-table:not(.spec-table-simple) thead th:nth-child(2),
+.spec-table:not(.spec-table-simple) thead th:nth-child(3),
+.spec-table:not(.spec-table-simple) thead th:nth-child(4),
+.spec-table:not(.spec-table-simple) tbody td:nth-child(2),
+.spec-table:not(.spec-table-simple) tbody td:nth-child(3),
+.spec-table:not(.spec-table-simple) tbody td:nth-child(4){width:24%;text-align:center}
+.spec-table:not(.spec-table-simple) thead th:nth-child(n+2){text-align:center}
+.spec-table-simple thead th:last-child,
+.spec-table-simple tbody td{text-align:center}
+
+/* Persian tables: the parameter/metric column is physically on the RIGHT.
+   Persian labels remain RTL; technical values remain LTR. */
+html[dir="rtl"] .spec-table{direction:rtl}
+html[dir="rtl"] .spec-table thead th,
+html[dir="rtl"] .spec-table tbody th{
+  direction:rtl;
+  unicode-bidi:plaintext;
+}
+html[dir="rtl"] .spec-table thead th:first-child,
+html[dir="rtl"] .spec-table tbody th{text-align:right}
+html[dir="rtl"] .spec-table:not(.spec-table-simple) thead th:nth-child(n+2){text-align:center}
+html[dir="rtl"] .spec-table tbody td{
+  direction:ltr;
+  unicode-bidi:isolate;
+  text-align:center;
+}
+html[dir="rtl"] .spec-table thead th{
+  text-transform:none;
+  letter-spacing:0;
+}
+
+/* Use identical column geometry for two-column Wind and Telemetry tables so
+   their headings sit directly above their data, with no horizontal scroll. */
+.spec-table-wrap-simple{overflow-x:hidden!important}
+.spec-table-simple{width:100%;min-width:0!important;max-width:100%;table-layout:fixed;white-space:normal}
+.spec-table-simple thead th:first-child,
+.spec-table-simple tbody th{width:44%}
+.spec-table-simple thead th:last-child,
+.spec-table-simple tbody td{width:56%}
+
+
+@media(max-width:720px){
+  .spec-table:not(.spec-table-simple) thead th:first-child,
+  .spec-table:not(.spec-table-simple) tbody th{width:28%}
+  .spec-table:not(.spec-table-simple) thead th:nth-child(2),
+  .spec-table:not(.spec-table-simple) thead th:nth-child(3),
+  .spec-table:not(.spec-table-simple) thead th:nth-child(4),
+  .spec-table:not(.spec-table-simple) tbody td:nth-child(2),
+  .spec-table:not(.spec-table-simple) tbody td:nth-child(3),
+  .spec-table:not(.spec-table-simple) tbody td:nth-child(4){width:24%}
+  .spec-table-simple thead th:first-child,
+  .spec-table-simple tbody th{width:52%}
+  .spec-table-simple thead th:last-child,
+  .spec-table-simple tbody td{width:48%}
+}
+
+/* Persian specification tables: consistent header placement across all three tables.
+   The first/label column is on the RIGHT; all data/value headings are centered
+   directly over their corresponding cells. */
+html[dir="rtl"] .spec-table{
+  direction:rtl;
+}
+html[dir="rtl"] .spec-table thead th:first-child,
+html[dir="rtl"] .spec-table tbody th{
+  direction:rtl;
+  text-align:right;
+}
+html[dir="rtl"] .spec-table thead th:not(:first-child){
+  direction:rtl;
+  text-align:center;
+}
+html[dir="rtl"] .spec-table tbody td{
+  direction:ltr;
+  unicode-bidi:isolate;
+  text-align:center;
+}
+html[dir="rtl"] .spec-table thead th{
+  text-transform:none;
+  letter-spacing:0;
+}
