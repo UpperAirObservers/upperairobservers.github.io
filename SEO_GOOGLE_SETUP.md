@@ -41,3 +41,7 @@ Persian:
 ## Editing Persian text
 
 For SEO, Persian content is now present directly in the HTML files under `/fa/`. Edit those files when refining the Persian copy. Do not rely on JavaScript to replace the language after page load, because the separate static URLs are what Google should index.
+
+
+## DigiSonde structured data note
+DigiSonde is described with a generic entity (`Thing`) rather than Google Product rich-result markup because the website does not publish a price/offer or genuine customer review/aggregate rating. This prevents Search Console from reporting the Product snippet requirement for `offers`, `review`, or `aggregateRating`. Do not add fabricated ratings or pricing.
