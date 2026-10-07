@@ -8,7 +8,7 @@ This version includes:
 
 ## GitHub Pages
 Upload the full contents of this folder into the repository root of:
-`upperairobservers.github.io`
+`uaobservers.ir`
 
 Then in GitHub:
 - Settings -> Pages

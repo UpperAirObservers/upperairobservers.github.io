@@ -4,8 +4,8 @@ The Persian homepage is now the primary target for the exact branded query **ش�
 
 After deployment:
 
-1. In Google Search Console, inspect `https://upperairobservers.github.io/fa/` and request indexing.
-2. Keep the LinkedIn company website field pointing to `https://upperairobservers.github.io/`.
+1. In Google Search Console, inspect `https://uaobservers.ir/fa/` and request indexing.
+2. Keep the LinkedIn company website field pointing to `https://uaobservers.ir/`.
 3. Use the exact Persian company wording «شرکت پایشگران جو بالا» naturally in future company profiles/directories where appropriate.
 4. Do not repeatedly stuff the phrase into product copy. The homepage title, description, organization structured data, and contact section already provide a strong exact-match brand signal.
 

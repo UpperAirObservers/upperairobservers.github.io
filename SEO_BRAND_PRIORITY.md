@@ -5,8 +5,8 @@ This version strengthens the Persian brand query **پایشگران جو بال�
 After deployment:
 
 1. In Google Search Console, inspect and request re-indexing for:
-   - https://upperairobservers.github.io/fa/
-   - https://upperairobservers.github.io/fa/digisonde.html
+   - https://uaobservers.ir/fa/
+   - https://uaobservers.ir/fa/digisonde.html
 2. Keep the LinkedIn company name and website consistent with **Upper Air Observers | پایشگران جو بالا** and link back to the website.
 3. In Search Console > Performance > Search results, monitor these queries:
    - پایشگران جو بالا

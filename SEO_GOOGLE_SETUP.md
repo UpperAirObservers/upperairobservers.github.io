@@ -1,6 +1,6 @@
 # Google SEO setup — Upper Air Observers
 
-This package is prepared for **https://upperairobservers.github.io/** and includes separate crawlable English and Persian URLs.
+This package is prepared for **https://uaobservers.ir/** and includes separate crawlable English and Persian URLs.
 
 ## Implemented
 
@@ -17,26 +17,26 @@ This package is prepared for **https://upperairobservers.github.io/** and includ
 
 ## After publishing to GitHub Pages
 
-1. Open Google Search Console and add a **URL-prefix property** for `https://upperairobservers.github.io/`.
+1. Open Google Search Console and add a **URL-prefix property** for `https://uaobservers.ir/`.
 2. Verify ownership using the HTML tag or HTML-file method Google provides. The verification token is unique to your Google account, so it is not prefilled in this package.
-3. Submit `https://upperairobservers.github.io/sitemap.xml` in **Sitemaps**.
+3. Submit `https://uaobservers.ir/sitemap.xml` in **Sitemaps**.
 4. Use **URL Inspection** to request indexing for the homepage and the main English/Persian product pages.
 5. Test the live pages with Google's Rich Results Test and PageSpeed Insights.
-6. Keep the LinkedIn company page linking back to `https://upperairobservers.github.io/` and keep the business name consistent as **Upper Air Observers / پایشگران جو بالا**.
+6. Keep the LinkedIn company page linking back to `https://uaobservers.ir/` and keep the business name consistent as **Upper Air Observers / پایشگران جو بالا**.
 
 ## Language URLs
 
 English:
-- `https://upperairobservers.github.io/`
-- `https://upperairobservers.github.io/digisonde.html`
-- `https://upperairobservers.github.io/ground-station.html`
-- `https://upperairobservers.github.io/digimon.html`
+- `https://uaobservers.ir/`
+- `https://uaobservers.ir/digisonde.html`
+- `https://uaobservers.ir/ground-station.html`
+- `https://uaobservers.ir/digimon.html`
 
 Persian:
-- `https://upperairobservers.github.io/fa/`
-- `https://upperairobservers.github.io/fa/digisonde.html`
-- `https://upperairobservers.github.io/fa/ground-station.html`
-- `https://upperairobservers.github.io/fa/digimon.html`
+- `https://uaobservers.ir/fa/`
+- `https://uaobservers.ir/fa/digisonde.html`
+- `https://uaobservers.ir/fa/ground-station.html`
+- `https://uaobservers.ir/fa/digimon.html`
 
 ## Editing Persian text
 
